@@ -11,6 +11,14 @@ import {
 import { Contact, Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 
+const dummyLinks = [
+  { id: 1, name: "Home", url: "#" },
+  { id: 2, name: "About", url: "#" },
+  { id: 3, name: "Services", url: "#" },
+  { id: 4, name: "Blog", url: "#" },
+  { id: 5, name: "Contact", url: "#" },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,59 +27,65 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="h-[60px] px-(--padding-x) py-[16px] flex items-center justify-between">
-      <div>
+    <div className="md:border md:border-b py-[8px]">
+      <nav className="container mx-auto h-[60px] px-(--padding-x) md:px-0 py-[26px] flex items-center justify-between">
         <div className="h-[50px] w-[65px] bg-gray-500/40 rounded flex justify-center items-center">
           logo
         </div>
-      </div>
-      <Dialog modal open={isOpen} onOpenChange={handleNavbar}>
-        <DialogTrigger>
-          <Button variant="outline" className="cursor-pointer">
-            <Menu className="text-gray-700" />
-          </Button>
-        </DialogTrigger>
-        <DialogContent
-          showCloseButton={false}
-          onInteractOutside={(e) => e.preventDefault()}
-          className="top-[160px] p-0"
-        >
-          <div className="flex justify-between items-center border-b p-[12px]">
-            <div className="h-[40px] w-[50px] bg-gray-500/40 rounded flex justify-center items-center">
-              logo
-            </div>
-            <X
-              onClick={() => handleNavbar(false)}
-              className="text-gray-500 text-[44px] cursor-pointer"
-            />
+        <div className="md:hidden">
+          <Dialog modal open={isOpen} onOpenChange={handleNavbar}>
+            <DialogTrigger>
+              <Button variant="outline" className="cursor-pointer">
+                <Menu className="text-gray-700" />
+              </Button>
+            </DialogTrigger>
+            <DialogContent
+              showCloseButton={false}
+              onInteractOutside={(e) => e.preventDefault()}
+              className="top-[160px] p-0"
+            >
+              <div className="flex justify-between items-center border-b p-[12px]">
+                <div className="h-[40px] w-[50px] bg-gray-500/40 rounded flex justify-center items-center">
+                  logo
+                </div>
+                <X
+                  onClick={() => handleNavbar(false)}
+                  className="text-gray-500 text-[44px] cursor-pointer"
+                />
+              </div>
+              <div className="p-[12px]">
+                {dummyLinks.map((link) => (
+                  <p className="whitespace-nowrap cursor-pointer">
+                    {link.name}
+                  </p>
+                ))}
+              </div>
+              <div className="p-[12px] w-full">
+                <Button className="w-full space-x-1 cursor-pointer">
+                  <Phone />
+                  <span>Contact Now</span>
+                </Button>
+              </div>
+            </DialogContent>
+          </Dialog>
+        </div>
+        <div className="hidden md:flex items-center gap-1.5">
+          <div className="p-[12px] flex gap-[22px]">
+            {dummyLinks.map((link) => (
+              <p className="whitespace-nowrap cursor-pointer hover:font-semibold">
+                {link.name}
+              </p>
+            ))}
           </div>
-          <div className="p-[12px]">
-            <p>Link 1</p>
-            <p>Link 2</p>
-            <p>Link 3</p>
-            <p>Link 4</p>
-            <p>Link 5</p>
-          </div>
-          <div className="p-[12px] w-full">
-            <Button className="w-full space-x-1 cursor-pointer">
+          <div className="w-full ml-[18px]">
+            <Button className="w-full space-x-1 cursor-pointer h-[40px]">
               <Phone />
               <span>Contact Now</span>
             </Button>
           </div>
-        </DialogContent>
-      </Dialog>
-      {/* <ul className="navbar-links">
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-      </ul> */}
-    </nav>
+        </div>
+      </nav>
+    </div>
   );
 };
 
