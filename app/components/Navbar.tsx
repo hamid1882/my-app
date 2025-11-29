@@ -1,15 +1,9 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Contact, Menu, Phone, X } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
+import CallButton from "./CallButton";
 
 const dummyLinks = [
   { id: 1, name: "Home", url: "#" },
@@ -78,10 +72,7 @@ const Navbar = () => {
             ))}
           </div>
           <div className="w-full ml-[18px]">
-            <Button className="w-full space-x-1 cursor-pointer h-[40px]">
-              <Phone />
-              <span>Contact Now</span>
-            </Button>
+            <CallButton />
           </div>
         </div>
       </nav>

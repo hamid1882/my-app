@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
-import React from "react";
+import CallButton from "./CallButton";
 
 const HeroSection = () => {
   return (
@@ -11,10 +9,7 @@ const HeroSection = () => {
         </h1>
         <p className="text-[18px]">We are glad to have you here.</p>
         <div className="p-[12px] my-[28px] md:p-0 w-full md:w-[200px]">
-          <Button className="w-full space-x-1 cursor-pointer h-[45px]">
-            <Phone />
-            <span>Contact Now</span>
-          </Button>
+          <CallButton />
         </div>
       </div>
       <div className="w-full h-full">

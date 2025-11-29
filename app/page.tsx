@@ -1,3 +1,4 @@
+import Experence from "./components/Experence";
 import Features from "./components/Features";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Features />
+      <Experence />
     </div>
   );
 }
