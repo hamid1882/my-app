@@ -10,6 +10,7 @@ import UspSection2 from "./components/UspSection2";
 import Trust from "./components/Trust";
 import Form from "./components/Form";
 import TrustedByAutoScroll from "./components/TrustedByAutoScroll";
+import AllServices from "./components/AllServices";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <TrustedByAutoScroll />
+      <AllServices />
       <Features />
       <Experence />
       <UspSection />
