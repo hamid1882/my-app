@@ -16,7 +16,7 @@ function Form() {
         </p>
       </div>
       <div className="relative h-full w-full md:w-2/3 md:px-[12px]">
-        <div className="w-full h-[400px] md:h-[550px] flex justify-center items-center">
+        <div className="w-full h-[480px] md:h-[550px] flex justify-center items-center">
           <div className="absolute -top-5 md:-top-20 z-0 h-full w-full overflow-hidden">
             <Image
               src={IpBg}
@@ -25,7 +25,7 @@ function Form() {
             />
           </div>
           <div className="min-w-full min-h-full flex justify-center items-center z-10 px-(--padding-x) md:px-0 py-[26px]">
-            <div className="relative top-0 md:top-8 min-h-[250px] w-full md:w-[550px] rounded-xl bg-white/70 backdrop-blur-lg">
+            <div className="relative top-0 min-h-[250px] w-full md:w-[550px] rounded-xl bg-white/70 backdrop-blur-lg">
               <FormInputs />
             </div>
           </div>

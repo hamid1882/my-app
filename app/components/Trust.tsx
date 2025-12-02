@@ -38,7 +38,7 @@ function Trust() {
 
   return (
     <div className="bg-gray-50 py-[26px]">
-      <div className="container mx-auto px-(--padding-x) md:px-0 py-[26px] flex flex-col md:flex-row md:justify-between gap-[20px] items-center">
+      <div className="container mx-auto px-(--padding-x) md:px-0 py-[26px] flex flex-col md:flex-row md:justify-between gap-[20px] items-center md:items-start">
         <div className="space-y-[16px] md:space-y-[26px] md:w-1/3">
           <h2 className="text-center md:text-left text-2xl font-bold">
             Why People Trust Us
