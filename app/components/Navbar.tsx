@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="md:border md:border-b py-[8px]">
+    <div className="md:border md:border-b py-[8px] sticky top-0 bg-white z-10">
       <nav className="container mx-auto h-[60px] px-(--padding-x) md:px-0 py-[26px] flex items-center justify-between">
         <div className="h-[50px] w-[65px] bg-gray-500/40 rounded flex justify-center items-center">
           logo

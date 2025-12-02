@@ -15,7 +15,7 @@ const CustomCardWrapper: React.FC<CustomCardWrapperProps> = ({
 
   return (
     <div
-      className={`shadow rounded-xl p-2 md:p-4 ${variantClass} min-w-1/2 break-after-all text-[14px] sm:text-[16px] md:text-[20px] text-balance min`}
+      className={`shadow rounded-xl p-2 md:p-4 ${variantClass} min-w-1/2 break-after-all text-[14px] sm:text-[16px] md:text-[18px] text-balance min`}
     >
       {children}
     </div>

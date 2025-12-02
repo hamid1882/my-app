@@ -7,6 +7,7 @@ import PolicyIssuanse from "./components/PolicyIssuanse";
 import Shortlisting from "./components/Shortlisting";
 import UspSection from "./components/UspSection";
 import UspSection2 from "./components/UspSection2";
+import Trust from "./components/Trust";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <hr />
       <PolicyIssuanse />
       <UspSection2 />
+      <Trust />
     </div>
   );
 }
