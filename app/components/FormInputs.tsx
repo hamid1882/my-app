@@ -77,8 +77,10 @@ function FormInputs() {
         <select
           id="requirement"
           name="requirement"
-          className="rounded-lg border border-dark-200 px-3 py-2 outline-none focus:ring-2 focus:ring-ocean-500 focus:border-ocean-500 transition-colors bg-white w-full"
-          value={form.requirement || ""}
+          className={`rounded-lg border border-dark-200 px-3 py-1.5 outline-none focus:ring-2 focus:ring-ocean-500 focus:border-ocean-500 transition-colors bg-white w-full text-[14px] ${
+            form.requirement ? "text-gray-900" : "text-gray-400"
+          }"
+          value={form.requirement || ""}`}
           onChange={handleChange}
           required
         >
