@@ -5,11 +5,11 @@ function UspSection() {
   return (
     <div className="shadow">
       <div className="py-[24px] space-y-[12px] w-[70%] md:w-full container mx-auto md:flex md:justify-between md:my-[32px]">
-        <div className="hidden md:flex flex-col gap-[8px] md:w-1/3">
+        <div className="flex flex-col gap-[8px] md:w-1/3">
           <h2 className="text-[20px] font-semibold text-center md:text-left md:w-[40%]">
             Visa Application Experience
           </h2>
-          <p>
+          <p className="hidden md:flex">
             What customers experience throughout their insurance journey with
             Ditto versus other platforms
           </p>

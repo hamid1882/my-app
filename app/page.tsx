@@ -8,6 +8,7 @@ import Shortlisting from "./components/Shortlisting";
 import UspSection from "./components/UspSection";
 import UspSection2 from "./components/UspSection2";
 import Trust from "./components/Trust";
+import Form from "./components/Form";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <PolicyIssuanse />
       <UspSection2 />
       <Trust />
+      <Form />
     </div>
   );
 }
