@@ -47,7 +47,7 @@ function Trust() {
             {socialLinks.map((link) => (
               <div
                 key={link.id}
-                className={`flex items-center gap-[10px] p-1.5 px-4  rounded-full cursor-pointer select-none ${
+                className={`flex items-center gap-[10px] p-1.5 px-2.5  rounded-full cursor-pointer select-none ${
                   selectedSocial === link.id ? "shadow bg-white" : ""
                 }`}
                 onClick={() => setSelectedSocial(link.id)}
