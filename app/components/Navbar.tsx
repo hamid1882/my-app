@@ -57,7 +57,7 @@ const Navbar = () => {
               <div className="p-[12px] w-full">
                 <Button className="w-full space-x-1 cursor-pointer">
                   <Phone />
-                  <span>Contact Now</span>
+                  <span>30-min Free Call</span>
                 </Button>
               </div>
             </DialogContent>

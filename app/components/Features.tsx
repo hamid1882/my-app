@@ -1,6 +1,14 @@
-import React from "react";
+import {
+  BadgeDollarSign,
+  CircleDollarSign,
+  CurrencyIcon,
+  DollarSign,
+  Droplet,
+  Globe,
+  Phone,
+  Plus,
+} from "lucide-react";
 import FeatureCard from "./FeatureCard";
-import { Phone } from "lucide-react";
 
 function Features() {
   return (
@@ -14,24 +22,64 @@ function Features() {
             Our Features
           </h2>
         </div>
-        <div className="space-y-[18px] md:flex md:gap-[28px] w-full my-[12px] md:my-[22px]">
+        <div className="overflow-x-auto  overflow-y-hidden space-y-[18px] grid grid-cols-1 md:grid-cols-2 gap-4 w-full my-[12px] md:my-[22px] py-[12px]">
           <FeatureCard
-            title="Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+            title="Visa Fee Financing"
+            description="Zero-cost EMIs for visa + translation + documentation"
             key="unique"
             icon={
               <div>
-                <Phone />
+                <DollarSign />
               </div>
             }
           />
           <FeatureCard
-            title="Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+            title="Study Abroad Financing"
+            description="Education loans, GIC, blocked accounts"
             key="unique"
             icon={
               <div>
-                <Phone />
+                <BadgeDollarSign />
+              </div>
+            }
+          />
+          <FeatureCard
+            title="Relocation Financing"
+            description="Flights + onboarding expenses EMIs"
+            key="unique"
+            icon={
+              <div>
+                <Globe />
+              </div>
+            }
+          />
+          <FeatureCard
+            title="Travel Insurance"
+            description="Integrated with packages"
+            key="unique"
+            icon={
+              <div>
+                <Droplet />
+              </div>
+            }
+          />
+          <FeatureCard
+            title="Income Protection for Migrants"
+            description="Optional partner products"
+            key="unique"
+            icon={
+              <div>
+                <Plus />
+              </div>
+            }
+          />
+          <FeatureCard
+            title="Forex / Remittance Desk"
+            description="Currency exchange and international money transfer services"
+            key="unique"
+            icon={
+              <div>
+                <CircleDollarSign />
               </div>
             }
           />
