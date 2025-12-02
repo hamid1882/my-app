@@ -20,7 +20,7 @@ function Experence() {
     <div className="bg-blue-50 md:bg-transparent py-[28px] md:py-0 h-full">
       <div className="flex flex-col md:flex-row relative min-h-[500px] mx-(--padding-x) md:mx-0">
         <div className="h-[100px] rounded-t-lg md:rounded-none md:min-h-full w-full absolute top-0 bg-transparent md:bg-[linear-gradient(90deg,rgba(162,207,247,.33)_40%,#fff_40%)]"></div>
-        <div className="container mx-auto h-full w-full z-10 flex flex-col md:flex-row rounded-t-lg md:rounded-none  ">
+        <div className="container mx-auto h-full w-full z-10 flex flex-col md:flex-row rounded-lg md:rounded-none">
           <div className="md:h-screen md:sticky top-0 p-[16px] md:pt-[68px] space-y-[12px] flex flex-row md:flex-col md:w-1/3 overflow-hidden md:items-center bg-gray-300 md:bg-transparent h-full rounded-t-lg">
             <h2 className="text-[22px] font-bold max-w-1/2 md:max-w-full">
               The Experience
@@ -33,7 +33,7 @@ function Experence() {
               />
             </div>
           </div>
-          <div className="bg-white md:w-2/3 md:px-[22px]">
+          <div className="bg-white md:w-2/3 md:px-[22px] rounded-b-lg md:rounded-none">
             <ExperienceCard
               number={1}
               title="Get Expert Guidance"
