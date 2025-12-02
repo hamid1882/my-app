@@ -9,12 +9,14 @@ import UspSection from "./components/UspSection";
 import UspSection2 from "./components/UspSection2";
 import Trust from "./components/Trust";
 import Form from "./components/Form";
+import TrustedByAutoScroll from "./components/TrustedByAutoScroll";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <HeroSection />
+      <TrustedByAutoScroll />
       <Features />
       <Experence />
       <UspSection />
