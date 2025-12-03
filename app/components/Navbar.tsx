@@ -24,8 +24,8 @@ const Navbar = () => {
   return (
     <div className="md:border md:border-b py-[8px] sticky top-0 bg-white z-10">
       <nav className="container mx-auto h-[60px] px-(--padding-x) md:px-0 py-[26px] flex items-center justify-between">
-        <div className="h-[50px] w-[65px] bg-gray-500/40 rounded flex justify-center items-center">
-          logo
+        <div className="h-[50px] w-[65px] rounded flex justify-center items-center font-bold bg-white">
+          MITTO
         </div>
         <div className="md:hidden">
           <Dialog modal open={isOpen} onOpenChange={handleNavbar}>
@@ -40,8 +40,8 @@ const Navbar = () => {
               className="top-[160px] p-0"
             >
               <div className="flex justify-between items-center border-b p-[12px]">
-                <div className="h-[40px] w-[50px] bg-gray-500/40 rounded flex justify-center items-center">
-                  logo
+                <div className="h-[40px] w-[50px] rounded flex justify-center items-center font-bold bg-white">
+                  MITTO
                 </div>
                 <X
                   onClick={() => handleNavbar(false)}
