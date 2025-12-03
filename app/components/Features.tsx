@@ -16,7 +16,7 @@ function Features() {
       <div className="container mx-auto my-8 md:flex gap-5">
         <div className="text-center md:text-left mr-[24px]">
           <p className="text-blue-500 font-semibold text-[18px]">
-            Ditto Offers
+            GoAnywr offers
           </p>
           <h2 className="text-2xl md:text-3xl font-bold mb-6 whitespace-nowrap">
             Our Features

@@ -11,7 +11,7 @@ function UspSection() {
           </h2>
           <p className="hidden md:flex">
             What customers experience throughout their insurance journey with
-            Ditto versus other platforms
+            GoAnywr versus other platforms
           </p>
         </div>
         <div className="flex justify-around md:w-2/3">

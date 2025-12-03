@@ -12,7 +12,7 @@ function Form() {
         </h2>
         <p className="hidden md:flex">
           What customers experience throughout their insurance journey with
-          Ditto versus other platforms
+          GoAnywr versus other platforms
         </p>
       </div>
       <div className="relative h-full w-full md:w-2/3 md:px-[12px]">
