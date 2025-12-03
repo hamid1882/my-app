@@ -11,6 +11,7 @@ import Trust from "./components/Trust";
 import Form from "./components/Form";
 import TrustedByAutoScroll from "./components/TrustedByAutoScroll";
 import AllServices from "./components/AllServices";
+import Products from "./components/Products";
 
 export default function Home() {
   return (
@@ -20,7 +21,27 @@ export default function Home() {
       <TrustedByAutoScroll />
       <AllServices />
       <Features />
-      <Experence />
+      <Experence type="b2c" />
+      <Products
+        products={[
+          { name: "Education Loans", link: "#" },
+          { name: "Travel Insurance", link: "#" },
+          { name: "Forex Cards", link: "#" },
+          { name: "International SIM", link: "#" },
+          { name: "Remittance Support", link: "#" },
+        ]}
+      />
+      <Experence type="b2b" />
+      <Products
+        products={[
+          { name: "Corporate travel insurance bundles", link: "#" },
+          { name: "Bulk Forex solutions", link: "#" },
+          {
+            name: "Corporate remittances & cross-border transactions support",
+            link: "#",
+          },
+        ]}
+      />
       <UspSection />
       <Shortlisting />
       <hr />

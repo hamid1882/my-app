@@ -1,3 +1,4 @@
+import BookCallWithDialog from "./BookCallWithDialog";
 import CallButton from "./CallButton";
 
 const HeroSection = () => {
@@ -14,7 +15,7 @@ const HeroSection = () => {
           solution for global mobility.
         </p>
         <div className="p-[12px] my-[28px] md:p-0 w-full md:w-[200px]">
-          <CallButton label="30 Min Free Consultation" />
+          <BookCallWithDialog />
         </div>
       </div>
       <div className="w-full h-full">

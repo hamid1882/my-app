@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import CallButton from "./CallButton";
+import BookCallWithDialog from "./BookCallWithDialog";
 
 const dummyLinks = [
   { id: 1, name: "Home", url: "#" },
@@ -55,10 +56,7 @@ const Navbar = () => {
                 ))}
               </div>
               <div className="p-[12px] w-full">
-                <Button className="w-full space-x-1 cursor-pointer">
-                  <Phone />
-                  <span>30-min Free Call</span>
-                </Button>
+                <BookCallWithDialog />
               </div>
             </DialogContent>
           </Dialog>
@@ -72,7 +70,7 @@ const Navbar = () => {
             ))}
           </div>
           <div className="w-full ml-[18px]">
-            <CallButton />
+            <BookCallWithDialog />
           </div>
         </div>
       </nav>
