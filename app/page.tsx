@@ -44,10 +44,6 @@ export default function Home() {
       />
       <UspSection />
       <Shortlisting />
-      <hr />
-      <ApplicationAndPayment />
-      <hr />
-      <PolicyIssuanse />
       <UspSection2 />
       <Trust />
       <Form />
